@@ -1,0 +1,22 @@
+Selectors Personalized:
+em HTML e id  = em CSS e #
+em HTML e Class = em CSS e .
+em HTML e pseudo classes = : sao os estados de um elemento exemplo div:hover hover e uma das pseudo classes voce pode usar div, classes e tags.
+The Id sobreponhe a class
+Representacao de um elemento filho em HTML exemplo = div > p. O p e filho do elemento div. 
+links: target e para voce definir o que o link vai fazer quando voce clica nele se vai abrir uma nova pagina ou ficar na mesma etc.
+# = id
+. = class
+: = pseudo-class
+:: = pseudo-element
+> = children
+O Box Model é um conceito fundamental em HTML e CSS que descreve como os elementos são estruturados e como suas dimensões são calculadas. Cada elemento em uma página web é representado como uma "caixa" (box) composta por quatro partes principais: Content, Padding, Border, Margin.
+Box-level: A tag ocupa a linha inteira forma uma caixa e quebra a linha para o proxima linha.Exemplos de elementos box-level:<div>, <p>, <h1> a <h6>, <header>, <footer>, <section> <ul>, <ol>, <li>, <table>
+Inline-level:A tag nao quebra linha manten no mesmo lugar nao pode usar o height e width.
+Exemplos de elementos inline-level:<span>, <a>, <strong>, <em>, <img>, <input>, <button>
+
+User-agent e o navegador ele configura a pagina para mostrar a voce!
+Margin: auto para tags box-level centralizar no meio.
+Outline e do lado de fora da borda
+
+Box-shadow - fazer sombra

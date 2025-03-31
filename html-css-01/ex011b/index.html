@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midias em HTML</title>
+  </head>
+  <body>
+    <h1>Medias dinamicas</h1>
+    <p>
+      Try to open this website in many devices or simply increase the size or
+      decrease of your brouwser
+    </p>
+    <picture>
+      <!--A imagem grande e a principal e a primeira de baixa para cima eu trabalhei com ate a medida da foto  na media quando a tela atingir 750px a image muda  se tiver fotos menores continua -->
+      <source
+        media="(max-width:750px )"
+        srcset="images/small.png"
+        type="image/png"
+      />
+
+      <source
+        media="(max-width:1050px )"
+        srcset="images/median.png"
+        type="image/png"
+      />
+      <img src="images/big.png" alt="photoFlexibel" />
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <audio src="media/EveretAlmond.mp3" controls>
+      click here to play the music
+    </audio>
+    <!--MP3 WAV OGG type audios-->
+    <br />
+    <audio preload="metadata" controls loop>
+      <source src="media/OhFiremp3.mp3" type="audio/mpeg" />
+      <source src="media/OhFireogg.ogg" type="audio/ogg" />
+      <source src="media/OhFirewav .wav" type="audio/wav" />
+      <p>
+        Sorry your brouwser can't to play this soung
+        <a href="media/OhFiremp3.mp3">Click here to download the file in mp3</a>
+      </p>
+    </audio>
+  </body>
+</html>

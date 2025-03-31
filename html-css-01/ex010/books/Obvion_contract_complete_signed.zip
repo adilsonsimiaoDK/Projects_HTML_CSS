@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com links</title>
+  </head>
+  <body>
+    <h1>Usando links externos</h1>
+    <p>
+      Voce pode acessa o meu
+      <a href="https://www.google.com" target="_blank" rel="external">Google</a>
+      repositorio publico no GitHub. Look
+    </p>
+    <p>
+      Voce site Youtube para acessar o meu
+      <a href="https://youtube.com/cursoemvideo/"> YouTube</a> canal em video
+    </p>
+    <h2>Usando links internos</h2>
+    <p>
+      Esta e a primeira pagina do site se voce quiser, pode acessar tambem a
+      minha
+      <a href="pag002.html" rel="next" target="_self">Segunda Pagina</a> segunda
+      Pagina
+    </p>
+    <p>
+      Link para Terceira pagina
+      <a href="pagina/pagina003.html" rel="next" target="_top"
+        >Terceira Pagina!</a
+      >Terceira pagina
+    </p>
+    <p>ftxm35n2v1b</p>
+    <h2>Links Para Download e como abrir os links</h2>
+    <ul>
+      <li>
+        <a
+          href="books/Obvion_contract_complete_signed.pdf"
+          download="Obvion_contract_complete_signed.pdf"
+          >Baixar o livro em PDF</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          type="application/zip"
+          download="Obvion_contract_complete_signed.zip"
+          >Livro compactado em ZIP</a
+        >
+      </li>
+      <li>
+        <a href="books/Obvion_contract_complete_signed.pdf" target="_blank"
+          >Como abrir em uma nova ABA</a
+        >
+      </li>
+      <li>
+        <a href="books/Obvion_contract_complete_signed.pdf" target="_self"
+          >Como abrir na mesma ABA</a
+        >
+      </li>
+    </ul>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
