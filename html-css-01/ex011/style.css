@@ -1,6 +1,6 @@
 .profile-pic {
   width: 150px;
   height: 150px;
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures the image scales without distortion */
+  border-radius: 50%;* Makes the image circular */
+  object-fit: cover;* Ensures the image scales without distortion */
 }
