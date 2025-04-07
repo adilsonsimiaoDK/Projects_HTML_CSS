@@ -33,12 +33,13 @@ h1 {
   color: white;
   align-items: center;
   font-variant: small-caps;
-  font-size: 6em;
+  font-size: 4em;
 }
 
 header > p {
   display: flex;
   justify-content: center;
+  padding-bottom: 2em;
 }
 header a {
   color: white;
@@ -50,7 +51,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-size: 2em;
+  font-size: 3vw;
   padding-top: 10vh;
   padding-bottom: 10vh;
   padding-left: 30px;
@@ -64,11 +65,22 @@ section {
 }
 section.img {
   background-color: gray;
-  color: wheat;
+  color: white;
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
+  background-attachment: fixed;
 }
 section.img > p {
-  width: 400px;
+  display: inline-block;
   background-color: rgba(0, 0, 0, 0.164);
+  padding: 5px;
+  text-shadow: 1px 1px 0px black;
+}
+section#img01 {
+  background-image: url("../imagens/background001.jpg");
+  background-position: right center;
+}
+section#img02 {
+  background-image: url("../imagens/background002.jpg");
 }
 footer {
   display: flex;
